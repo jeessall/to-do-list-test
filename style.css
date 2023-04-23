@@ -1,0 +1,73 @@
+body {
+    font-family: "lato";
+    background-color: #000000;
+    color: #ffffff;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #6ecf73;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+    
+
+.content-add-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#input-new-task,
+#btn-new-task {
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+    
+}
+
+#input-new-task {
+    width: 18rem;
+    border-radius: 1rem;
+}
+
+#btn-new-task {
+    background-color: #192c18;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#btn-new-task:hover {
+    background-color: #0e8814;
+    transition: 1.2s;
+}
+
+#to-do-list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+}
+
+#to-do-list li {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 11rem;
+}
