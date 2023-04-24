@@ -2,7 +2,6 @@ body {
     font-family: "lato";
     background-color: #000000;
     color: #ffffff;
-    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +38,7 @@ h1 {
 }
 
 #input-new-task {
-    width: 18rem;
+    width: 14rem;
     border-radius: 1rem;
 }
 
@@ -60,14 +59,47 @@ h1 {
 #to-do-list {
     display: flex;
     flex-direction: column;
-    margin-right: 80px;
+    padding: 0;
 }
 
 #to-do-list li {
+    list-style-type: none;
     font-size: 1.4rem;
     text-transform: capitalize;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 11rem;
+    gap: 14rem;
+    
+}
+
+#to-do-list li:hover{
+    background-color: #192c18;
+    transition: .4s;
+    border-radius: 3rem;
+    padding-left: 1rem;
+}
+
+#btn-ok{
+    border: none;
+    background-color: #0e8814;
+    color: var(--color-white);
+    padding: .4rem .8rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-ok:hover{
+    background-color: #0e8814;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+   margin-top: 20rem;
 }
